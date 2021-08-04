@@ -12,7 +12,7 @@ import org.apache.commons.cli.CommandLine;
 import org.apache.commons.cli.DefaultParser;
 import org.apache.commons.cli.HelpFormatter;
 
-public class LAPR {
+public class APRMain {
 	private String projectDirectoryPath;
 	private String testCaseDirectoryPath;
 	private boolean help;
@@ -28,7 +28,7 @@ public class LAPR {
 	private String finalPatch;
 
 	public static void main(String[] args) {
-		LAPR runner = new LAPR();
+		APRMain runner = new APRMain();
 		runner.run(args);
 	}
 	
