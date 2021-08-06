@@ -27,12 +27,16 @@ public class FaultLocalizer {
 		
 	}
 	
-	public int getFaultFilePath() {
-		return faultFilePath;
+	public String getFaultFilePath() {
+		// TODO
+		String a = "a";
+		return a; //faultFilePath;
 	}
 	
 	public int getFaultLocationLineNumber() {
-		return faultLocationLineNumber;
+		// TODO
+		int a = 1;
+		return a; //faultLocationLineNumber;
 	}
 	
 }
