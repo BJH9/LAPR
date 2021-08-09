@@ -6,7 +6,8 @@ public class Patcher {
 	public void fixFaultCode(String path) {
 		//결함을 고친다.
 		System.out.println("//PATCHER");
-		System.out.println("fix buggy code found by fl process using finalPatch.");
+		System.out.println("fixFaultCode method");
+		System.out.println("Fix buggy code found by fl process using finalPatch.");
 	}
 }
 
