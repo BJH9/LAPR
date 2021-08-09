@@ -12,7 +12,7 @@ public class FaultLocalizer {
 		//faultfilepath와 faultlocationlinenumber를 출력한다.
 		System.out.println("//FAULTLOCALIZATION");
 		System.out.println("excute method");
-		System.out.println("Test directory at projectDirectoryPath using test case at testCasePath .");
+		System.out.println("Test directory at projectDirectoryPath using test case at testCasePath.");
 		System.out.println("Investigate fault.");
 		System.out.println("If code has fault, find faultFilePath which has fault.");
 		System.out.println("If code has fault, find faultLoacationLineNumber which has fault.");		
