@@ -49,17 +49,17 @@ public class APRMain {
 		
 		//FaultLocalization: projectDirectoryPath에 테스트케이스를 적용하는 과정을 거쳐 faultDirectoryPath faultFilePath와 faultLocationLineNumber생성한다.
 		faultLocalizer.excute(projectDirPath, testCasePath);
-		faultFilePath = faultLocalizer.getFaultFilePath(); // TODO
+		faultFilePath = faultLocalizer.getFaultFilePath(); 
 		faultLocationLineNumber = faultLocalizer.getFaultLocationLineNumber();
 		
 		//PatchGeneration: faultDirectoryPath,  faultFilePath, faultLocationLineNumber위치에 결함에 대한 testcase들을 적용해 패치들을 생성한다. candidate patch
-		candidatePatches = patchGenerator.getPatches(faultDirectoryPath, faultFilePath, faultLocationLineNumber); // TODO
+		candidatePatches = patchGenerator.getPatches(faultDirectoryPath, faultFilePath, faultLocationLineNumber); 
 		
 		//PatchValidation: candidate patch에 테스트케이스를 적용해 최종적으로 final patch를 찾는다.
-		finalPatch = patchValidator.getFinalPatches(candidatePatches); // TODO
+		finalPatch = patchValidator.getFinalPatches(candidatePatches); 
 		
 		//Patch apply: faultFilePath의 오리지널 파일의 결함코드에 correct patch를 적용시켜 최종 수정한다.
-		patcher.fixFaultCode(finalPatch); // TODO
+		patcher.fixFaultCode(finalPatch); 
 	}
 	
 	private boolean parseOption(Options options, String[] args) {
