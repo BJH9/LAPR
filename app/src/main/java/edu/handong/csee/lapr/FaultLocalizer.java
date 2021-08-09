@@ -10,6 +10,7 @@ public class FaultLocalizer {
 	public void excute(String projectDirectoryPath, String testCasePath) {
 		//테스트케이스를 projectdirectorypath에 적용한다.
 		//faultfilepath와 faultlocationlinenumber를 출력한다.
+		System.out.println("//FAULTLOCALIZATION");
 		System.out.println("excute method");
 		System.out.println("Test directory at projectDirectoryPath using test case at testCasePath .");
 		System.out.println("investigate fault.");
