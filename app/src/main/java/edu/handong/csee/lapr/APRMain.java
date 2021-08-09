@@ -1,11 +1,6 @@
 package edu.handong.csee.lapr;
+
 import org.apache.commons.cli.Options;
-
-import edu.handong.csee.lapr.FaultLocalizer;
-import edu.handong.csee.lapr.PatchGenerator;
-import edu.handong.csee.lapr.PatchValidator;
-import edu.handong.csee.lapr.Patcher;
-
 import org.apache.commons.cli.Option;
 import org.apache.commons.cli.CommandLineParser;
 import org.apache.commons.cli.CommandLine;
