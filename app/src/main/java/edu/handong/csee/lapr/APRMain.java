@@ -47,6 +47,8 @@ public class APRMain {
 		PatchValidator patchValidator = new PatchValidator();
 		Patcher patcher = new Patcher();
 		
+		System.out.println("projectDirPath: " + projectDirPath);
+		System.out.println("testCasePath: " + testCasePath);
 		//FaultLocalization: projectDirectoryPath에 테스트케이스를 적용하는 과정을 거쳐 faultDirectoryPath faultFilePath와 faultLocationLineNumber생성한다.
 		faultLocalizer.excute(projectDirPath, testCasePath);
 		faultFilePath = faultLocalizer.getFaultFilePath(); 
